@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <div class="checkout-container">
+    <h2>Order Summary</h2>
+    <div class="cart-item">
+      <img src="lenovo.png" alt="Product 1">
+      <h3>Lenovo 15.6" IdeaPad 1 Laptop</h3>
+      <p>32,999.99 RS/-</p>
+    </div>
+
+    <!-- Add more cart items as needed -->
+
+    <div class="total">
+      <h3>Total:32,999.99 RS/-</h3>
+    </div>
+
+    <button class="checkout-btn" onclick="processPayment()">Proceed to Payment</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function processPayment() {
+      // Simulate payment processing
+      alert('Payment successful! Thank you for your purchase.');
+      // You can redirect the user to a confirmation page or perform any other necessary actions here
+    }
+  </script>
+</body>
+</html>
+

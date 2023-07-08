@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce Website</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #a31c1c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    
+    .product h3 {
+      color: #333;
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    
+    .product p {
+      color: #777;
+      margin: 0 0 5px;
+    }
+    
+    .product p:first-child {
+      font-weight: bold;
+    }
+    
+    .product p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .product img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    /* Additional CSS for the cart section */
+    #cart {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .cart-item img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    
+    .cart-item h3 {
+      margin: 0;
+    }
+    
+    .cart-item p {
+      margin: 0;
+      color: #777;
+    }
+    
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .cart-total h3 {
+      margin: 0;
+    }
+    
+    .cart-total .buy-btn {
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My E-commerce Store</h1>
+  </header>
+  
+  <p>Welcome to My E-commerce Store! We offer a wide range of high-quality products to meet your needs.</p>
+  
+  <h2>Featured Products</h2>
+  
+  <div class="product">
+    <img src="lenovo.png" alt="lenovo.png">
+    <h3>Lenovo 15.6" IdeaPad 1 Laptop, 1TB SSD Storage, 20GB Memory, AMD Athlon Silver Processor, 15.6" HD Display, Wi-Fi 6 & Bluetooth 5.1, SD Card Reader, HDMI, Windows 11 Home, 1 Year Microsoft 365</h3>
+    <p>Price: 32,999.99 RS /-</p>
+    <p>Rating: 4.5/5</p>
+    <p>Description: 【1TB SSD & 20GB RAM】Enjoy up to 15x faster performance than a traditional hard drive with 1TB PCIe NVMe M.2 SSD storage and experience improved multitasking with higher bandwidth thanks to 20GB of RAM
+        【Processor】AMD Athlon Silver 3050U (up to 3.2 GHz, 2 cores)
+        【Connectivity】Wi-Fi 6 (11ax, 2x2) + Bluetooth 5.1
+        【Display】15.6" HD (1366 x 768) Anti-glare Display
+        【Operating System】Windows 11 Home in S mode, you may switch S mode to regular Windows 11 Home. Full access to Microsoft Excel, Word, PowerPoint, OneNote, Access, and 1 TB of One Drive storage for 1 year.</p>
+    <a href="#" class="buy-btn">Add to Cart</a>
+  </div>
+  
+  <div class="product">
+    <img src="ll5.png" alt="lenovo">
+    <h3>lenovo yoga</h3>
+    <p>Price: 50000 RS /-(offer)</p>
+    <p>Rating: 4.2/5</p>
+    <p></p>
+    <a href="#" class="buy-btn">Add to Cart</a>
+  </div>
+  
+  <div class="product">
+    <img src="rog 5.png" alt="rog5">
+    <h3>Asus ROG Zephyrus M16 GX650PY-NM052WS AMD Ryzen 9 7945HX 16 Inches Gaming Laptop (32GB/2TB SSD/Windows 11/Black/2.67 Kg)</h3>
+    <p>Price: 4,12,999 RS /-</p>
+    <p>Rating: 4.8/5</p>
+    <p>Memory and storage: 32GB and 2TB SSD HDD capacity
+      Processor: AMD Ryzen 9 7945HX
+      Operating System: Pre-loaded Windows 11
+      Display: 16 Inches screen with 2560 x 1600 Pixels resolution
+      Weight: 2.67 Kg
+      Warranty: 1 Year from the manufacturer from the date of purchase</p>
+    <a href="#" class="buy-btn">Add to Cart</a>
+  </div>
+  
+  <section id="cart">
+    <h2>Cart</h2>
+    
+    <div class="cart-item">
+      <img src="lenovo.png" alt="lenovo.png">
+      <h3>Lenovo 15.6" IdeaPad 1 Laptop, 1TB SSD Storage, 20GB Memory, AMD Athlon Silver Processor, 15.6" HD Display, Wi-Fi 6 & Bluetooth 5.1, SD Card Reader, HDMI, Windows 11 Home, 1 Year Microsoft 365</h3>
+      <p> 32,999.99 RS/-</p>
+      <a href="#" class="remove-btn">Remove</a>
+    </div>
+    
+    <div class="cart-item">
+      <img src="rog 5.png" alt="Product 2">
+      <h3>>Asus ROG Zephyrus M16 GX650PY-NM052WS AMD Ryzen 9 7945HX 16 Inches</h3>
+      <p>Price: 4,12,999 RS /-</p>
+      <a href="#" class="remove-btn">Remove</a>
+    </div>
+    
+    <div class="cart-total">
+      <h3>Total: 4,45,998.99 RS/-</h3>
+      <a href="#" class="buy-btn">Checkout</a>
+    </div>
+  </section>
+  
+</body>
+</html>

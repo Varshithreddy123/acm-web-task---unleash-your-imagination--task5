@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upcoming Products & Sign Up</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+    }
+    
+    .product img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .product h3 {
+      color: #333;
+      font-size: 20px;
+      margin: 0;
+    }
+    
+    .product p {
+      color: #777;
+      margin: 0;
+    }
+    
+    .signup-container {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    .signup-container h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .signup-form label {
+      margin-bottom: 10px;
+    }
+    
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .signup-form button {
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .signup-form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming Products & Sign Up</h1>
+  </header>
+  
+  <div class="product-list">
+    <div class="product">
+      <img src="lenovo.png" alt="lenovo.png">
+      <h3>lenovo</h3>
+      <p>Coming Soon!</p>
+    </div>
+    
+    <div class="product">
+      <img src="product msi 5.png" alt="Product 2">
+      <h3>MSI Stealth GS66 12UH-019ES Laptop (Core i7 12th Gen/32 GB/1 TB SSD/Windows 11/8 GB)</h3>
+      <p>Coming Soon!</p>
+    </div>
+    
+    <div class="product">
+      <img src="product dell 5.png" alt="dell">
+      <h3>Dell Vostro 5620 (D562005WIN9) Laptop (Core i7 12th Gen/16 GB/1 TB SSD/Windows 11/2 GB</h3>
+      <p>Coming Soon!</p>
+    </div>
+  </div>
+  
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form class="signup-form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
+
